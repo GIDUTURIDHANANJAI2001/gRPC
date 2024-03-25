@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_package = "com.accountJavaStubs.grpc";
+
+service AccountService {
+    rpc createAccount(CreateAccountRequest) returns (CreateAccountResponse);
+}
+
+message CreateAccountRequest {
+    ReqHead reqHead = 1;
+}
+
+message ReqHead {
+    string clientId = 1;
+    string reqId = 2;
+    string action = 3;
+    string reqTime = 4;
+    string version = 5;
+    string country = 6;
+    int32 subType = 7;
+}
+
+message CreateAccountResponse {
+    Result result = 1;
+}
+
+message Result {
+    ResHead resHaed = 1;
+    ResultInfo resultInfo = 2;
+}
+message ResHead {
+    string clientId = 1;
+    string reqId = 2;
+    string action = 3;
+    string reqTime = 4;
+    string version = 5;
+    string country = 6;
+    int32 subType = 7;
+}
+
+message ResultInfo {
+    string result = 1;
+}

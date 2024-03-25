@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.228">
+    <testcase classname="insta feature file" name="giving credentials to the user" time="12.035">
+        <system-out><![CDATA[Given I have an Instagram client............................................passed
+When create account with firstname as "dhanu" and secondname as "lucky" and middlename as "lovely" email as "dhanulucky545@gmail.com" and phoneno as "770" and dob as "02jan" and country as "INDIA" and mothername as "sudha".passed
+Then validate the user created or not.......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

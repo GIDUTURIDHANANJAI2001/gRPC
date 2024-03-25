@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "4b9deeef-a9b6-4bb1-a244-56b8ed55f615",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33484312"
+	},
+	"item": [
+		{
+			"name": "https://fakestoreapi.com/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"DHANUQD\",\r\n  \"price\": 13.6,\r\n  \"description\": \"lorem ipsum set\",\r\n  \"image\": \"https://i.pravatar.cc\",\r\n  \"category\": \"electronic\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakestoreapi.com/products",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

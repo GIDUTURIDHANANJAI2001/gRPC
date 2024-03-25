@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+option java_package = "com.Instagramjavastubs.grpc";
+
+service InstagramService
+{
+	rpc signup(signupRequest) returns (signupResponse);
+}
+
+message signupRequest
+{
+	SignupHead signupHead = 1;
+}
+
+message SignupHead 
+{
+	string Firstname = 1;
+	string Secondname = 2;
+	string email = 3;
+	int32 phoneno= 4;
+	string dob = 5;
+	string country = 6;
+	string Middlename = 7;
+	string Mothername = 8;
+}
+
+message signupResponse 
+{
+	SignupHead signuphead = 1;
+	Result result = 2;
+}
+
+message Result 
+{
+	string resultmsg = 1;
+}
+
+
+	
+
